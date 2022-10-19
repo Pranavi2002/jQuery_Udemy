@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="js/jquery.js"></script>
+
+<script>
+	$("document").ready(function(){
+
+		$("#add-class").click(function(){
+			$("p:first").addClass('color');
+		});
+
+		$("#remove-class").click(function(){
+			$("p:first").removeClass('color');
+		});
+
+		$("#toggle-class").click(function(){
+			$("p:first").toggleClass('color');
+		});
+
+		$("#increase-class").click(function(){
+			$("p:first").css("font-size","+=1px");
+		});
+
+		$("#decrease-class").click(function(){
+			$("p:last").css("font-size","-=1px");
+		});
+
+	});	
+
+</script>
+	
+	<style type="text/css">
+		.color{
+			color:  #00D8FF;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<a href="#" id="add-class">Add Class</a>
+
+	<a href="#" id="remove-class">Remove Class</a>
+
+	<a href="#" id="toggle-class">Toggle Class</a>
+
+	<a href="#" id="increase-class">Increase Class</a>
+
+	<a href="#" id="decrease-class">Decrease Class</a>
+
+	<div id="container">
+
+		<p>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<p>2 Lorem <b>ipsum dolor sit amet</b>, consectetur adipiscing elit, <strong>sed do eiusmod tempor</strong> incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation <em>ullamco laboris nisi ut</em> aliquip ex ea commodo consequat.</p>
+
+		<p>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="js/jquery.js"></script>
+
+<script>
+	$("document").ready(function(){
+
+		// $("#container p").wrap("<div class='colorBox'>");
+
+		// $("#container p:first").wrap("<div class='colorBox'>");
+
+		// $("#container p:first").empty();
+
+		// $("#container p:nth-child(2)").empty();
+
+		// $("<div>container</div>").replaceAll("#container");
+
+		$("#container").replaceWith("<div>This has been replaced with</div>");
+
+	});	
+
+</script>
+	
+	<style type="text/css">
+		.colorBox{
+			color:  #00D8FF;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="container">
+
+		<p>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<p>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<p>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+	</div>
+
+</body>
+</html>
